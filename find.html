@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.css">
+  <script type="text/javascript" src="js/agendamento.js"></script>
+</head>
+
+<body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+       <img style="width: 25px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Font_Awesome_5_solid_bars.svg/896px-Font_Awesome_5_solid_bars.svg.png">
+      </label>
+      <ul>
+        <li><a class="active" href="agenda_all.html">Agendados</a></li>
+        <li><a class="link" href="find.html">Pesquisar</a></li>
+        <li><a class="link" href="index.html">Agendar</a></li>
+      </ul>
+    </nav>
+
+    <div style="margin-top: 100px; text-align: center;" class="inputBx">
+      <input type="date" id="key_data" style="width: 200px; height: 50px; text-align: center; font-size: 1rem;" placeholder="informe a data">
+      <input type="number" id="key_hora" style="width: 50px; height: 50px; text-align: center; font-size: 1rem;" placeholder="Hora"><br><br>
+      <button class="buttonExcluir" type="submit" onclick="listarAgendado()"> Listar</button><br><br>
+      <button class="buttonExcluir" type="submit" onclick="excluirAgendado()"> Excluir</button><br><br>
+      <button class="buttonExcluir" type="submit" onclick="excluirAgendados()"> Excluir Todos</button>
+    </div>
+
+    <div class="cards">
+
+      <div class="card card1">
+        <div class="details" name="agenda" id="agenda">
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>

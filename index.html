@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/agendamento.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Faça seu Agendamento</h2>
+
+                    <div class="inputBx">
+                        <span>Nome Completo:</span>
+                        <input type="text" id="nome">
+                    </div>
+
+
+                    <div class="inputBx">
+                        <span>Horário:</span>
+                        <input type="number" id="horario">
+                    </div>
+
+                    <div class="inputBx">
+                        <span>Data:</span>
+                        <input type="date" id="data">
+                    </div>
+
+                    <div class="inputBx">
+                        <span>Serviço:</span>
+                        <select class="selactInput" id="servico">
+                            <option value="Make basica">Make basica</option>
+                            <option value="Make Avançada">Make Avançada</option>
+                            <option value="Sobrancelha">Sobrancelha</option>
+                            <option value="Curso">Curso</option>
+                        </select>
+                    </div>
+
+
+                    <div class="inputBx">
+                        <input class="agendar" type="submit" onclick="agendamento()" value="Agendar">
+                        <a href="agenda_all.html"><input style="margin-top: 50px;" class="agendar" type="submit" value="Voltar"></a>
+                    </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
